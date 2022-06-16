@@ -35,18 +35,27 @@ console.log(m2);
 
 
 // ----------------------SWITCH--------------------
-let ville = prompt("De quel ville vezez-vous?");
-console.log(ville.toLowerCase());
+// let ville = "a";
 
+let ville = prompt("De quel ville vezez-vous?");
+console.log(ville);
+
+ville = ville?? "pas de ville";
 
 // .toLowerCase() transforme toute les lettres d'un string en minuscule
 switch(ville.toLowerCase()){
+    case "pas de ville":
+        console.log("Pourquoui tu ne veux pas répondre?");
+        break;
     // switch compare ce qui est mit entre parenthèse et selectionne le case qui correspond
     case "paris":
         case "londre":
             case "tokyo":
+                // si je met plusieurs cas les un après les autres,
+                // Ils effecturont la même action
         console.log("De la capitale donc.");
         break;
+        // Le mot clef break indique où doit s'arrêter le cas.
         case "lille":
             console.log("Moule frite et bière");
             break;
@@ -56,6 +65,17 @@ switch(ville.toLowerCase()){
                 case "armentière":
                     console.log("Une ville pauvre mais fière");
                     break;
+                    // Default permet de gérer ce que doit faire le switch si aucune cas ne correspond
                     default:
                         console.log("Je ne connais pas.");
 }
+// ------------------------------??-----------------
+let a, b = undefined, c= null, d= "chaussette", e = {nom: "Bruno"}, f = ["text"];
+console.log(a?? "coucou");
+console.log(b?? "coucou");
+console.log(c?? "coucou");
+console.log(d?? "coucou");
+console.log(e.nom?? "coucou");
+console.log(e.prenom?? "coucou");
+console.log(f[0]?? "coucou");
+console.log(f[1]?? "coucou");

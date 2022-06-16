@@ -278,5 +278,22 @@ console.log(o4, o1);
 console.log({...a1});
 // console.log([...o1]); ne fonctionne pas dans le sens inverse.
 o4.yeux = "vert";
+// Fusionne deux objets, les propriétés différentes sont ajouté, mais si sune propriétés
+//  est en commun , alors ce sera la valeur du dernier objet qui sera gardé.
 let o5 ={...o4 , ...o1};
 console.log(o5);
+
+// ------------------------- BOOLEAN--------------------------
+let b1 = true, b2 = false;
+// Un boolean ne peut avoir que deux valeurs, true ou false
+console.log(b1,b2);
+// Mais on peut en faire apparaître de plein de façon:
+console.log("1 < 2: ", 1<2);
+console.log("1 > 2: ", 1>2);
+console.log("1 >= 2: ", 1>=2);
+console.log("1 <= 2: ", 1<='1');
+console.log("1 == '1': ", 1=='1');
+console.log("1 === '1': ", 1==='1');
+console.log("1 != '1' : ", 1!='1');
+console.log("1 !== '1': ", 1!=='1');
+console.log("!b1" , !b1, "!b2", !b2);

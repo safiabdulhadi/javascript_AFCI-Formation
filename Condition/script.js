@@ -71,6 +71,8 @@ switch(ville.toLowerCase()){
 }
 // ------------------------------??-----------------
 let a, b = undefined, c= null, d= "chaussette", e = {nom: "Bruno"}, f = ["text"];
+// l'opérateur ?? permet de selectionner le premier élément si il n'est pas 
+// Null ou undefined , sinon il selectionnera le second élément.
 console.log(a?? "coucou");
 console.log(b?? "coucou");
 console.log(c?? "coucou");

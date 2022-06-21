@@ -87,5 +87,38 @@ la réponse convienne, en cas de réponse superieur à 20, on ferra apparaître 
  total  2*3
  Quatrième boucle:
  total = 6
-
+ Cinquième boule:
+ totoal = 14*5
+ i ==6 doc étant superieur à v, la boucle s'arrête 
+ J'afficle ensuite total qui ici vaut 120
 */
+// -----------------------------EXO 5.7---------------------------
+/* Ecrir un algorithme qui demade successivement 20( 5 parceque la flemme) nombres 
+et qui lui dise ensuite quel était le plus grand parmi ces nombres.
+bonus : Indiquer la position à laquelle a été donné ce nombre */
+
+// let nb, max, pos;
+// for(let i = 1; i <=5; i++) {
+//     nb = parseInt(prompt("Donne moi un fichu nombre !"));
+//     if(i ==1 || max< nb){
+//         max = nb;
+//         pos = i;
+//     }
+// }
+// console.log(`Le nombre le plus grand est ${max} et a été donné à la saisie numéro ${pos}`);
+
+// ------------------------EXO 5.8----------------------------------
+/* même exercice que précédement mais on arrête de demander des qui si l'utilisateur
+entre un 0 */
+
+// let nb, max, pos;
+// let i = 1;
+// do{
+//     nb = parseInt(prompt("Donne moi un fichu nombre !"));
+//     if(i==1 || max<nb){
+//         max = nb;
+//         pos = i;
+//     }
+//     i++;
+// } while (nb != 0)
+// console.log(` Le nombre le plus grand est ${max} et a été donné à la saisie numéro ${pos}`);

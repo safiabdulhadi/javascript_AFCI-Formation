@@ -1,0 +1,63 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: cornflowerblue;
+}
+header button{
+    font-size: 2rem;
+    margin: 1rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkseagreen;
+}
+/* -------------------------------- HORLOGE ---------------------------- */
+.clock{
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("horloge.jpg");
+    background-size: contain;
+}
+.hour{
+    height: 8px;
+    width: 30%;
+}
+.minute{
+    height: 6px;
+    width: 40%;
+}
+.second{
+    height: 4px;
+    width: 50%;
+}
+.hour, .minute, .second{
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform-origin: left center;
+}
+.pivot{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+}

@@ -10,7 +10,7 @@ let date = new Date();
 // getfullYear nous rend l'année
 copyright.textContent = date.getFullYear();
 // toLocaleTimeString nous rend l'heure, les minutes et les secondes en un string.
-mainTime.textContent = date.toLocaleTimeString();
+// mainTime.textContent = date.toLocaleTimeString();
 // 
 
 

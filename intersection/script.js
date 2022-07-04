@@ -54,12 +54,10 @@ function setIndictor(entries) {
         window.addEventListener("scroll", indicatorAnimation);
     } else {
         // pour alleger mon sit, je coupe mon évènement quand je n'en ai pas besoin.
-        console.log("bidule");
         window.removeEventListener("scroll", indicatorAnimation);
     }
 
     function indicatorAnimation() {
-        console.log("test");
         /**
          * scrollY représente combien de pixel on a scroll.
          * offsetTop représente la position par rapport au top de notre élément.
